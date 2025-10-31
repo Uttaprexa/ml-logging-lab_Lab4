@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This lab **extends** the basic Python logging tutorial (`Starter.ipynb`) by implementing comprehensive logging in a production-ready ML pipeline for heart disease classification.
+In this lab, I have **extended** the basic Python logging tutorial (`Starter.ipynb`) by implementing comprehensive logging in a production-ready ML pipeline for heart disease classification.
 **Result**: Successfully trained and compared 4 ML models with complete logging coverage across all pipeline stages.
 
 ---
