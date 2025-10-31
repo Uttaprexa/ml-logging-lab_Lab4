@@ -160,7 +160,7 @@ cat logs/ml_pipeline.log
 
 ---
 
-## 🎓 Learning Outcomes
+## Learning Outcomes
 
 ### From Original Lab (Starter.ipynb)
 - Understood Python logging module architecture
