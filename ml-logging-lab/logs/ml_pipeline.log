@@ -1,0 +1,588 @@
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | <module> | ======================================================================
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | <module> | ML PIPELINE WITH COMPREHENSIVE LOGGING
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | <module> | ======================================================================
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | main | STEP 1: DATA LOADING
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 18:57:28 | MLPipeline | DEBUG | load_dataset | Attempting to load file: data/heart_disease.csv
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | load_dataset | Creating sample dataset...
+2025-10-30 18:57:28 | MLPipeline | DEBUG | create_sample_dataset | Creating synthetic heart disease dataset...
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | main | STEP 2: PREPROCESSING
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | preprocess_data | Starting preprocessing...
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | preprocess_data | Features: 13, Samples: 300
+2025-10-30 18:57:28 | MLPipeline | DEBUG | preprocess_data | Target distribution:
+target
+1    211
+0     89
+Name: count, dtype: int64
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | preprocess_data | Train: 240 samples, Test: 60 samples
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | main | STEP 3: MODEL TRAINING
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_multiple_models | ======================================================================
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_multiple_models | TRAINING MULTIPLE MODELS
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_multiple_models | ======================================================================
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: Logistic Regression
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for Logistic Regression:
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 0.8500
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 0.8528
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 0.8500
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 0.8511
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: Random Forest
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for Random Forest:
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 0.9667
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 0.9682
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 0.9667
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 0.9661
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: Gradient Boosting
+2025-10-30 18:57:28 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for Gradient Boosting:
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 1.0000
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 1.0000
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 1.0000
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 1.0000
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: SVM
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for SVM:
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 0.8500
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 0.8467
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 0.8500
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 0.8458
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | main | STEP 4: COMPARISON
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | compare_models | ======================================================================
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | compare_models | MODEL COMPARISON
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | compare_models | ======================================================================
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | compare_models | Model                       Accuracy   F1-Score
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | compare_models | ----------------------------------------------------------------------
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | compare_models |    Logistic Regression         0.8500     0.8511
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | compare_models |    Random Forest               0.9667     0.9661
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | compare_models |    SVM                         0.8500     0.8458
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | compare_models | ----------------------------------------------------------------------
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | main | Check detailed logs: logs/ml_pipeline.log
+2025-10-30 18:57:29 | MLPipeline | [32mINFO    [0m | main | Pipeline execution finished.
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | <module> | ======================================================================
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | <module> | ML PIPELINE WITH COMPREHENSIVE LOGGING
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | <module> | ======================================================================
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | main | STEP 1: DATA LOADING
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | wrapper | Starting: load_dataset
+2025-10-30 20:10:43 | MLPipeline | DEBUG | load_dataset | Attempting to load file: data/heart_disease.csv
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | load_dataset | Dataset loaded: data/heart_disease.csv
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | load_dataset | Shape: (300, 14)
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | load_dataset | Columns: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal', 'target']
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | load_dataset | No missing values
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | wrapper | Completed: load_dataset in 0.02s
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | main | STEP 2: PREPROCESSING
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | wrapper | Starting: preprocess_data
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | preprocess_data | Starting preprocessing...
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | preprocess_data | Features: 13, Samples: 300
+2025-10-30 20:10:43 | MLPipeline | DEBUG | preprocess_data | Target distribution:
+target
+1    211
+0     89
+Name: count, dtype: int64
+2025-10-30 20:10:43 | MLPipeline | [33mWARNING [0m | preprocess_data | Class imbalance detected! Ratio: 0.42
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | preprocess_data | Train: 240 samples, Test: 60 samples
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | wrapper | Completed: preprocess_data in 0.02s
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | main | STEP 3: MODEL TRAINING
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_multiple_models | ======================================================================
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_multiple_models | TRAINING MULTIPLE MODELS
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_multiple_models | ======================================================================
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | wrapper | Starting: train_and_evaluate
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: Logistic Regression
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training completed
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for Logistic Regression:
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 0.8500
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 0.8528
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 0.8500
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 0.8511
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | wrapper | Completed: train_and_evaluate in 0.02s
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | wrapper | Starting: train_and_evaluate
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: Random Forest
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training completed
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for Random Forest:
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 0.9667
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 0.9682
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 0.9667
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 0.9661
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | wrapper | Completed: train_and_evaluate in 0.15s
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | wrapper | Starting: train_and_evaluate
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: Gradient Boosting
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training completed
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for Gradient Boosting:
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 1.0000
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 1.0000
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 1.0000
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 1.0000
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | wrapper | Completed: train_and_evaluate in 0.16s
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | wrapper | Starting: train_and_evaluate
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: SVM
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training completed
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for SVM:
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 0.8500
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 0.8467
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 0.8500
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 0.8458
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | wrapper | Completed: train_and_evaluate in 0.02s
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | main | STEP 4: COMPARISON
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | compare_models | ======================================================================
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | compare_models | MODEL COMPARISON
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | compare_models | ======================================================================
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | compare_models | Model                       Accuracy   F1-Score
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | compare_models | ----------------------------------------------------------------------
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | compare_models |    Logistic Regression         0.8500     0.8511
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | compare_models |    Random Forest               0.9667     0.9661
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | compare_models | 1 Gradient Boosting           1.0000     1.0000
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | compare_models |    SVM                         0.8500     0.8458
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | compare_models | ----------------------------------------------------------------------
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | compare_models | BEST MODEL: Gradient Boosting (1.0000)
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | main | PIPELINE COMPLETED SUCCESSFULLY
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | main | Check detailed logs: logs/ml_pipeline.log
+2025-10-30 20:10:43 | MLPipeline | [32mINFO    [0m | main | Pipeline execution finished.
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | <module> | ======================================================================
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | <module> | ML PIPELINE WITH COMPREHENSIVE LOGGING
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | <module> | ======================================================================
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | main | STEP 1: DATA LOADING
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | wrapper | Starting: load_dataset
+2025-10-30 20:14:47 | MLPipeline | DEBUG | load_dataset | Attempting to load file: data/heart_disease.csv
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | load_dataset | Dataset loaded: data/heart_disease.csv
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | load_dataset | Shape: (300, 14)
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | load_dataset | Columns: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal', 'target']
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | load_dataset | No missing values
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | wrapper | Completed: load_dataset in 0.00s
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | main | STEP 2: PREPROCESSING
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | wrapper | Starting: preprocess_data
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | preprocess_data | Starting preprocessing...
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | preprocess_data | Features: 13, Samples: 300
+2025-10-30 20:14:47 | MLPipeline | DEBUG | preprocess_data | Target distribution:
+target
+1    211
+0     89
+Name: count, dtype: int64
+2025-10-30 20:14:47 | MLPipeline | [33mWARNING [0m | preprocess_data | Class imbalance detected! Ratio: 0.42
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | preprocess_data | Train: 240 samples, Test: 60 samples
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | preprocess_data | Preprocessing completed
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | wrapper | Completed: preprocess_data in 0.02s
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | main | STEP 3: MODEL TRAINING
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_multiple_models | ======================================================================
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_multiple_models | TRAINING MULTIPLE MODELS
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_multiple_models | ======================================================================
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | wrapper | Starting: train_and_evaluate
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: Logistic Regression
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training completed
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for Logistic Regression:
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 0.8500
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 0.8528
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 0.8500
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 0.8511
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | wrapper | Completed: train_and_evaluate in 0.04s
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | wrapper | Starting: train_and_evaluate
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: Random Forest
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training completed
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for Random Forest:
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 0.9667
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 0.9682
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 0.9667
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 0.9661
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | wrapper | Completed: train_and_evaluate in 0.16s
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | wrapper | Starting: train_and_evaluate
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: Gradient Boosting
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training completed
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for Gradient Boosting:
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 1.0000
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 1.0000
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 1.0000
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 1.0000
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | wrapper | Completed: train_and_evaluate in 0.13s
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | wrapper | Starting: train_and_evaluate
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: SVM
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training completed
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for SVM:
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 0.8500
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 0.8467
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 0.8500
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 0.8458
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | wrapper | Completed: train_and_evaluate in 0.01s
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | main | STEP 4: COMPARISON
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | compare_models | ======================================================================
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | compare_models | MODEL COMPARISON
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | compare_models | ======================================================================
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | compare_models | Model                       Accuracy   F1-Score
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | compare_models | ----------------------------------------------------------------------
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | compare_models |    Logistic Regression         0.8500     0.8511
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | compare_models |    Random Forest               0.9667     0.9661
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | compare_models | 1 Gradient Boosting           1.0000     1.0000
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | compare_models |    SVM                         0.8500     0.8458
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | compare_models | ----------------------------------------------------------------------
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | compare_models | BEST MODEL: Gradient Boosting (1.0000)
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | main | PIPELINE COMPLETED SUCCESSFULLY
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | main | Check detailed logs: logs/ml_pipeline.log
+2025-10-30 20:14:47 | MLPipeline | [32mINFO    [0m | main | Pipeline execution finished.
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | <module> | ======================================================================
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | <module> | ML PIPELINE WITH COMPREHENSIVE LOGGING
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | <module> | ======================================================================
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | main | STEP 1: DATA LOADING
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | wrapper | Starting: load_dataset
+2025-10-30 22:27:01 | MLPipeline | DEBUG | load_dataset | Attempting to load file: data/heart_disease.csv
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | load_dataset | Dataset loaded: data/heart_disease.csv
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | load_dataset | Shape: (300, 14)
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | load_dataset | Columns: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal', 'target']
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | load_dataset | No missing values
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | wrapper | Completed: load_dataset in 0.03s
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | main | STEP 2: PREPROCESSING
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | wrapper | Starting: preprocess_data
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | preprocess_data | Starting preprocessing...
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | preprocess_data | Features: 13, Samples: 300
+2025-10-30 22:27:01 | MLPipeline | DEBUG | preprocess_data | Target distribution:
+target
+1    211
+0     89
+Name: count, dtype: int64
+2025-10-30 22:27:01 | MLPipeline | [33mWARNING [0m | preprocess_data | Class imbalance detected! Ratio: 0.42
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | preprocess_data | Train: 240 samples, Test: 60 samples
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | preprocess_data | Preprocessing completed
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | wrapper | Completed: preprocess_data in 0.03s
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | main | STEP 3: MODEL TRAINING
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_multiple_models | ======================================================================
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_multiple_models | TRAINING MULTIPLE MODELS
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_multiple_models | ======================================================================
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | wrapper | Starting: train_and_evaluate
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: Logistic Regression
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training completed
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for Logistic Regression:
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 0.8500
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 0.8528
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 0.8500
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 0.8511
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | wrapper | Completed: train_and_evaluate in 0.02s
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | wrapper | Starting: train_and_evaluate
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: Random Forest
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training completed
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for Random Forest:
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 0.9667
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 0.9682
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 0.9667
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 0.9661
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | wrapper | Completed: train_and_evaluate in 0.20s
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | wrapper | Starting: train_and_evaluate
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: Gradient Boosting
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training completed
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for Gradient Boosting:
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 1.0000
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 1.0000
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 1.0000
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 1.0000
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | wrapper | Completed: train_and_evaluate in 0.14s
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | wrapper | Starting: train_and_evaluate
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: SVM
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training completed
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for SVM:
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 0.8500
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 0.8467
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 0.8500
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 0.8458
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | wrapper | Completed: train_and_evaluate in 0.02s
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | main | STEP 4: COMPARISON
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | compare_models | ======================================================================
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | compare_models | MODEL COMPARISON
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | compare_models | ======================================================================
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | compare_models | Model                       Accuracy   F1-Score
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | compare_models | ----------------------------------------------------------------------
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | compare_models |    Logistic Regression         0.8500     0.8511
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | compare_models |    Random Forest               0.9667     0.9661
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | compare_models | 1 Gradient Boosting           1.0000     1.0000
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | compare_models |    SVM                         0.8500     0.8458
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | compare_models | ----------------------------------------------------------------------
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | compare_models | BEST MODEL: Gradient Boosting (1.0000)
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | main | PIPELINE COMPLETED SUCCESSFULLY
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | main | Check detailed logs: logs/ml_pipeline.log
+2025-10-30 22:27:01 | MLPipeline | [32mINFO    [0m | main | Pipeline execution finished.
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | <module> | ======================================================================
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | <module> | ML PIPELINE WITH COMPREHENSIVE LOGGING
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | <module> | ======================================================================
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | main | STEP 1: DATA LOADING
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | wrapper | Starting: load_dataset
+2025-10-30 22:30:41 | MLPipeline | DEBUG | load_dataset | Attempting to load file: data/heart_disease.csv
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | load_dataset | Dataset loaded: data/heart_disease.csv
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | load_dataset | Shape: (300, 14)
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | load_dataset | Columns: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal', 'target']
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | load_dataset | No missing values
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | wrapper | Completed: load_dataset in 0.01s
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | main | STEP 2: PREPROCESSING
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | wrapper | Starting: preprocess_data
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | preprocess_data | Starting preprocessing...
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | preprocess_data | Features: 13, Samples: 300
+2025-10-30 22:30:41 | MLPipeline | DEBUG | preprocess_data | Target distribution:
+target
+1    211
+0     89
+Name: count, dtype: int64
+2025-10-30 22:30:41 | MLPipeline | [33mWARNING [0m | preprocess_data | Class imbalance detected! Ratio: 0.42
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | preprocess_data | Train: 240 samples, Test: 60 samples
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | preprocess_data | Preprocessing completed
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | wrapper | Completed: preprocess_data in 0.02s
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | main | STEP 3: MODEL TRAINING
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_multiple_models | ======================================================================
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_multiple_models | TRAINING MULTIPLE MODELS
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_multiple_models | ======================================================================
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | wrapper | Starting: train_and_evaluate
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: Logistic Regression
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training completed
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for Logistic Regression:
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 0.8500
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 0.8528
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 0.8500
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 0.8511
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | wrapper | Completed: train_and_evaluate in 0.03s
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | wrapper | Starting: train_and_evaluate
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: Random Forest
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training completed
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for Random Forest:
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 0.9667
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 0.9682
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 0.9667
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 0.9661
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | wrapper | Completed: train_and_evaluate in 0.19s
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | wrapper | Starting: train_and_evaluate
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: Gradient Boosting
+2025-10-30 22:30:41 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training completed
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for Gradient Boosting:
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 1.0000
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 1.0000
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 1.0000
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 1.0000
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | wrapper | Completed: train_and_evaluate in 0.15s
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | wrapper | Starting: train_and_evaluate
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: SVM
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training completed
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for SVM:
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 0.8500
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 0.8467
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 0.8500
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 0.8458
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | wrapper | Completed: train_and_evaluate in 0.01s
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | main | STEP 4: COMPARISON
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | compare_models | ======================================================================
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | compare_models | MODEL COMPARISON
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | compare_models | ======================================================================
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | compare_models | Model                       Accuracy   F1-Score
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | compare_models | ----------------------------------------------------------------------
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | compare_models |    Logistic Regression         0.8500     0.8511
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | compare_models |    Random Forest               0.9667     0.9661
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | compare_models |  Gradient Boosting           1.0000     1.0000
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | compare_models |    SVM                         0.8500     0.8458
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | compare_models | ----------------------------------------------------------------------
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | compare_models | BEST MODEL: Gradient Boosting (1.0000)
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | main | PIPELINE COMPLETED SUCCESSFULLY
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | main | Check detailed logs: logs/ml_pipeline.log
+2025-10-30 22:30:42 | MLPipeline | [32mINFO    [0m | main | Pipeline execution finished.
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | <module> | ======================================================================
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | <module> | ML PIPELINE WITH COMPREHENSIVE LOGGING
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | <module> | ======================================================================
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | main | STEP 1: DATA LOADING
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | wrapper | Starting: load_dataset
+2025-10-30 22:30:59 | MLPipeline | DEBUG | load_dataset | Attempting to load file: data/heart_disease.csv
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | load_dataset | Dataset loaded: data/heart_disease.csv
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | load_dataset | Shape: (300, 14)
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | load_dataset | Columns: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal', 'target']
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | load_dataset | No missing values
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | wrapper | Completed: load_dataset in 0.02s
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | main | STEP 2: PREPROCESSING
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | wrapper | Starting: preprocess_data
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | preprocess_data | Starting preprocessing...
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | preprocess_data | Features: 13, Samples: 300
+2025-10-30 22:30:59 | MLPipeline | DEBUG | preprocess_data | Target distribution:
+target
+1    211
+0     89
+Name: count, dtype: int64
+2025-10-30 22:30:59 | MLPipeline | [33mWARNING [0m | preprocess_data | Class imbalance detected! Ratio: 0.42
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | preprocess_data | Train: 240 samples, Test: 60 samples
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | preprocess_data | Preprocessing completed
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | wrapper | Completed: preprocess_data in 0.01s
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | main | STEP 3: MODEL TRAINING
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_multiple_models | ======================================================================
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_multiple_models | TRAINING MULTIPLE MODELS
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_multiple_models | ======================================================================
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | wrapper | Starting: train_and_evaluate
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: Logistic Regression
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training completed
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for Logistic Regression:
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 0.8500
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 0.8528
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 0.8500
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 0.8511
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | wrapper | Completed: train_and_evaluate in 0.02s
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | wrapper | Starting: train_and_evaluate
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: Random Forest
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training completed
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for Random Forest:
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 0.9667
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 0.9682
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 0.9667
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 0.9661
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | wrapper | Completed: train_and_evaluate in 0.13s
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | wrapper | Starting: train_and_evaluate
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: Gradient Boosting
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training completed
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for Gradient Boosting:
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 1.0000
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 1.0000
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 1.0000
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 1.0000
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | wrapper | Completed: train_and_evaluate in 0.13s
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | wrapper | Starting: train_and_evaluate
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training: SVM
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate | --------------------------------------------------
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Training completed
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate | Results for SVM:
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   accuracy    : 0.8500
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   precision   : 0.8467
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   recall      : 0.8500
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | train_and_evaluate |   f1          : 0.8458
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | wrapper | Completed: train_and_evaluate in 0.02s
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | main | STEP 4: COMPARISON
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | compare_models | ======================================================================
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | compare_models | MODEL COMPARISON
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | compare_models | ======================================================================
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | compare_models | Model                       Accuracy   F1-Score
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | compare_models | ----------------------------------------------------------------------
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | compare_models |    Logistic Regression         0.8500     0.8511
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | compare_models |    Random Forest               0.9667     0.9661
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | compare_models |    Gradient Boosting           1.0000     1.0000
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | compare_models |    SVM                         0.8500     0.8458
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | compare_models | ----------------------------------------------------------------------
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | compare_models | BEST MODEL: Gradient Boosting (1.0000)
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | main | 
+======================================================================
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | main | PIPELINE COMPLETED SUCCESSFULLY
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | main | ======================================================================
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | main | Check detailed logs: logs/ml_pipeline.log
+2025-10-30 22:30:59 | MLPipeline | [32mINFO    [0m | main | Pipeline execution finished.
